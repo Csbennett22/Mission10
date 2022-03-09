@@ -29,7 +29,7 @@ namespace BookStore.Models
         public string Zip { get; set; }
         [Required(ErrorMessage = "Please enter the country name")]
         public string Country { get; set; }
-
-        //public bool Anonymous { get; set; }
+        [BindNever]
+        public bool PaymentReceived { get; set; }
     }
 }
